@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+img {
+    float: right;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: #f7a1c1;color:white;}
+footer {background: #f7a1c1;color:white;}
+
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+
+body {
+    background-image: url("http://www.pptbackgrounds.org/uploads/-floral-simple-backgrounds-powerpoint.jpg");
+    background-repeat: repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1 style="font-family:verdana;">Trisha Espitia<h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Portfolio</a></li>
+</ul>
+</nav>
+
+<article class="article">
+  <h1 style= "font-family:verdana; color:#cd5a8e; " > About Me!</h1>
+  <p style="font-family:verdana; color:#cd5a8e;"> <strong> Hello! My name is Trisha Espitia, and I am a student currently attending STEM Early College High School! </strong> <br> </p>
+  <p style="font-family:verdana; color:#cd5a8e;"> <strong> My major is in Computer Science/Technology at Palo Alto College.<br> When I'm not occupying my time with studying or homework, I love drawing and socializing with friends and family. </strong> </p>
+  <img src="images/naveah_doodle.png" height="310">
+  <img src="images/wildehopps xmas.png" height="283">
+  <p style="font-family:verdana; color:#cd5a8e;"> <strong> In the future, I'm hoping to have a career with the Walt Disney Animation Studios, <br> making animated films or series for audiences to enjoy.<br>
+  My main motivation is to make people happy, and that's what I hope to do everyday! </strong> </p>
+</article>
+
+<footer></footer>
+</div>
+
+</body>
+</html>
